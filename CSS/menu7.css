@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+margin:0px;
+padding:0px;
+	 transition-duration: 0.5s;    
+			}
+        
+        .page {
+            width:100vw;
+            height:100vh;
+            background-color: aqua;            
+        }
+        
+        .barra-stick {
+    white-space: nowrap; /* [1] */
+  overflow-x: auto;    
+    width:800px;
+    background-color: #666;
+    margin-top:150px;             
+    position:sticky;
+	top:0px;        
+    left:0px;
+	right:0px;	
+	width:100%;
+	paddin-top:0px;		
+  -webkit-overflow-scrolling: touch; /* [3] */
+  -ms-overflow-style: -ms-autohiding-scrollbar;} /* [4] */ 
+/* [5] */
+.barra-stick::{-webkit-scrollbar;
+   }
+         
+    ul.acorh {    
+    position:relative;
+    font-family:'Roboto', sans-serif;
+	font-weight: 300;
+    width:800px;
+    background-color: #666;    
+    height:50px;
+    padding-top:8px;
+    padding-left:8%;
+    
+       
+}
+			
+			ul, ol {
+				list-style:none;				
+			}
+			
+			ul.acorh > li {
+				float:left;                
+                height:48px; 
+                padding-top:5px;
+			}
+			
+			ul.acorh li a {	                
+				color:#ccc;
+                margin-bottom:-1px;
+				text-decoration:none;
+                min-height: 25px;
+				padding:10px 12px; 
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+				display:block;
+                z-index:99999;
+			}
+			
+			ul.acorh li a:hover {
+				background-color:#67A2E0;
+			}
+			
+			ul.acorh li ul {
+				display:none;				
+				position:absolute;
+				min-width:140px;                
+				border-bottom:2px #222536 solid;
+				border-right:thin #5E6692 solid;
+                z-index:99999;                
+				-webkit-box-shadow: 2px 5px 7px #5E5D5D;
+  -moz-box-shadow: 2px 5px 7px #5E5D5D;
+			}
+			
+			ul.acorh li:hover > ul {
+				display:block;					
+			}
+			
+			ul.acorh li ul li {
+				position:relative;
+				background:hsla(213,40%,28%,0.80);
+			}
+	
+			
+			
+			ul.acorh li ul li ul {
+				right:-140px;
+				top:0px;				
+			}
+        
+.pestana {
+    background-color: white;
+    color:#444;
+    margin-top:5px;
+    padding-top:-5px;
+    max-height:40px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    }
+        
+.adorno {
+	position:absolute;
+	display:block;
+	background-color: #777;
+	right: 17px; 
+	top: 0px;
+	height:150px;
+	width: 300px;	
+	z-index:6666;
+	opacity: 1.0;
+	transition: 0.6s;
+}
+        .logo {
+            position: absolute;
+            top:20px;
+            left:15px;
+            background-color:palevioletred;
+            width: 200px;
+            height:80px;
+            z-index: 7777;
+        }
+        .usuario {
+            position: absolute;
+            top:118px;
+            left:25px;
+            font-family:'Roboto', sans-serif; 
+            width: 300px;
+            height:30px;
+            z-index: 7777;
+        }
+        
+        .login {
+            position: absolute;
+            top:110px;
+            padding: 5px 4px 1px 3px;            
+            right:65px;
+            background-color:#009D0A;
+            max-width: 30px;
+            max-height:30px;
+            z-index: 7777;
+            border-radius: 15px;
+        }
+        
+        .login:hover {            
+            background-color:#2ECC38;            
+        }
+        
+        .logout {
+            display:none;
+            position: absolute;
+            top:110px;
+            padding: 5px 4px 1px 3px;
+            right:65px;
+            background-color:#E91801;
+            max-width: 30px;
+            max-height:30px;
+            z-index: 7777;
+            border-radius: 15px;
+        }
+        
+        .logout:hover {            
+            background-color:#DB6B2F;            
+        }
+        
+        .config {
+            position: absolute;
+            top:110px;
+            padding-top: 5px;
+            padding-left: 5px;
+            right:28px;
+            background-color:#06628F;
+            max-width: 30px;
+            max-height:30px;
+            z-index: 7777;
+            border-radius: 15px;
+        }
+     .config:hover {            
+            background-color:#278CBD;            
+        }
+        
+.colores {
+	position:fixed;
+	display:none;
+	padding:5px 0px 3px 0px;
+	background-color:#fff;	
+	top:100px;
+	right:10px;
+	width:140px;	
+	z-index: 999999;
+	-webkit-box-shadow: 2px 5px 7px #5E5D5D;
+  -moz-box-shadow: 2px 5px 7px #5E5D5D;
+}
+        
+.botonc {	
+	padding:5px;
+	color: #fff;
+	font-family:'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin-top:2px;
+}
+.tit1 {	
+	padding:5px;
+	color: #292929;
+	font-family:'Roboto', sans-serif;
+	font-weight: bold;
+	text-align: center;	
+}
+}
+        
+/*Tablet chica*/
+@media (min-width: 581px)       
+.adorno {
+    display:none;
+	right: 0px; 	
+}
+}  

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tutorial</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/css-menu.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/CSS02.css" rel="stylesheet" type="text/css" />
+    <link id="CSS-main" rel="stylesheet" type="text/css" href="CSS/metal.css" />
+    <script type="text/javascript" src="../js/main.js"></script>
+</head>
+
+<body onLoad="start();" id="bodyin">
+    <script src="js/menu-tuto.js"></script>
+    <div class="main-page">
+        <div class="anchura" id="anchura">
+
+            <div class="cuerpo">
+
+                <img src="../iconos/tutorial1.png" alt="" width="80" align="left" style="margin-top: 12px; margin-left: 15px; padding-bottom: 3px; padding-right: 8px; " />
+                <p class="titulo1" id="titulo">Tutorial</p>
+                <div class="principal">
+                    <div class="general" id="cont">
+                        <p align="left" class="texto">En esta sección presentamos las bases del Biomagnetismo. A través de una serie de artículos y videos que explican los principios del <strong>Biomagnetismo
+								Médico</strong>, desarrollado por el Dr. Isaac Goiz Durán a partir del fenómeno del
+                            <strong>Par Biomagnético</strong>.</p>
+                        <hr>
+                        <p class="cabeza1">
+                            <a name="articulos"></a>Temas introductorios</p>
+                        <ul class="ul-texto">
+                            <li><a href="par.htm" target="_self">Qué es el Par Biomagnético</a></li>
+                            <li><a href="tratamiento.htm" target="_self">Cómo hacer un Tratamiento con Biomagnetismo</a>
+                            </li>
+                            <li><a href="bioenergetica.htm" target="_self">Qué es la Bioenergética</a></li>
+                            <li><a href="pares-clasif.htm">Clasificación de pares</a></li>
+                            <li><a href="goizduran.htm">Dr. Isaac Goiz Durán, biografía</a></li>
+                        </ul>
+                        <hr>
+                        <p class="cabeza1">
+                            <a name="videos"></a>Vídeos</p>
+                        <p class="texto">En nuestro canal de YouTube encontrarás varios videos que presentan los temas introductorios del biomagnetismo médico:</p>
+                        <ul class="ul-texto">
+                            <li><a href="https://youtu.be/3ForFAPSr0U" target="new">Así Cura el
+									Biomagnetismo</a> <em>- https://youtu.be/3ForFAPSr0U -</em></li>
+                            <li><a href="https://youtu.be/i1Wj265uabc" target="new">Biomagnetismmo y uso de imanes</a>
+                                <em>- https://youtu.be/i1Wj265uabc -</em></li>
+                            <li><a href="https://youtu.be/1L-dJpAzOD4" target="new">Bacterias y
+									Biomagnetismo</a> <em>- https://youtu.be/1L-dJpAzOD4 -</em></li>
+                            <li><a href="https://youtu.be/QmdqupuFbD8" target="new">Virus y
+									Biomagnetismo</a> <em>- https://youtu.be/QmdqupuFbD8 -</em></li>
+                        </ul>
+                        <p class="texto">En nuestro canal <a href="https://www.youtube.com/channel/UCisecAeYuhhk0A12tE-VrVQ/featured" target="_blank">Bion</a> encontrarás vídeos sobre una gran variedad de temas, te recomendamos suscribirte y activar la campanita de notificaciones
+                            para estar al tanto de los nuevos materiales que publicamos periódicamente.</p>
+                        <hr>
+                        <p class="cabeza1">
+                            <a name="atlas"></a>Atlas de Puntos</p>
+                        <p class="texto">Presentamos la ubicación de los principales puntos usados en biomagnetismo por zonas del cuerpo</p>
+                        <ul class="ul-texto">
+                            <li>
+                                <p><a href="puntos.htm">Lista de puntos</a> (336 puntos básicos)</p>
+                            </li>
+                            <li>
+                                <p><a href="cabeza.htm">cabeza</a></p>
+                            </li>
+                            <li>
+                                <p><a href="cuello.htm">cuello y brazos</a></p>
+                            </li>
+                            <li>
+                                <p><a href="torso.htm">torso</a></p>
+                            </li>
+                            <li>
+                                <p><a href="espalda.htm">espalda</a></p>
+                            </li>
+                            <li>
+                                <p><a href="piernas.htm">piernas</a></p>
+                            </li>
+                            <li>
+                                <p><a href="mujer.htm">otros puntos</a></p>
+                            </li>
+                        </ul>
+                        <hr>
+                        <p class="cabeza1">
+                            <a name="glosario"></a>Glosario</p>
+                        <ul class="ul-texto">
+                            <li>
+                                <p><a href="glosario.htm">Términos más comunes usados en el biomagnetismo médico</a></p>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div class="lateral" id="mastemas">
+                    <p class="cabeza2">En esta secci&oacute;n:
+                        <a name="temas"></a>
+                    </p>
+                    <ul class="ul-lat">
+                        <li><a href="#articulos">Temas introductorios</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#atlas">Atlas de puntos</a></li>
+                        <li><a href="#glosario">Glosario</a></li>
+                    </ul>
+                    <div class="cerrar-btn2" id="lateral-btn" onclick="toggle_visibility('mastemas');"><img src="../graficos/menu_cab2.gif" width="27" height="29" alt="" /></div>
+                </div>
+                <!-- Cierra lateral" -->
+            </div>
+            <!-- Cierra cuerpo" -->
+            <div>
+
+            </div>
+            <!-- Cierra pie" -->
+
+        </div>
+        <!-- Cierra anchura" -->
+        <script>
+            fun openYoutubeLink(youtubeID: String) {
+                val intentApp = Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:" + youtubeID))
+                val intentBrowser = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=" + youtubeID))
+                try {
+                    this.startActivity(intentApp)
+                } catch (ex: ActivityNotFoundException) {
+                    this.startActivity(intentBrowser)
+                }
+
+            }
+        </script>
+
+
+</body>
+
+</html>

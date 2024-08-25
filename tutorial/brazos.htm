@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<title>Puntos: Brazos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../CSS/css-menu.css" rel="stylesheet" type="text/css" />
+<link href="../CSS/CSS02.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/puntos.css" rel="stylesheet" type="text/css" />
+<link id="CSS-main" rel="stylesheet" type="text/css" href="CSS/metal.css"/>
+<script type="text/javascript" src="../js/main.js"></script>    
+</head>
+<body onLoad="start();" id="bodyin">		
+<script src="js/menu-tuto.js"></script>	
+	<div class="main-page">
+		
+<div class="anchura" id="anchura">
+	
+	<div class="cuerpo">
+
+<p class="titulo1" id="titulo" >Puntos: Brazos</p>
+  		
+<div class="principal">
+<p class="texto" >&nbsp; </p>
+<div id="wrapper">
+<img src="graficos/pts-brazo.jpg"> 
+          
+<div class="spot" id="deltp" onMouseOver="show('deltp','deltt');" onmouseout="hide('deltp','deltt');" style="left: 66%;
+top: 3%;">
+<div class="puntos-text" id="deltt"><div class="triangle-up"></div>Deltoides</div></div> 
+                    
+<div class="spot" id="bursap" onMouseOver="show('bursap','bursat');" onmouseout="hide('bursap','bursat');" style="left: 62.5%;
+top: 33.7%;">
+<div class="puntos-text" id="bursat"><div class="triangle-up"></div>Bursa</div></div>
+    
+<div class="spot" id="humerp" onMouseOver="show('humerp','humert');" onmouseout="hide('humerp','humert');" style="left: 55.7%;
+top: 33.7%;">
+<div class="puntos-text" id="humert"><div class="triangle-up"></div>Húmero (posterior)</div></div>
+    
+<div class="spot" id="braqp" onMouseOver="show('braqp','braqt');" onmouseout="hide('braqp','braqt');" style="left: 46%;
+top: 46.5%;">
+<div class="puntos-text" id="braqt"><div class="triangle-up"></div>Braquial</div></div>
+    
+<div class="spot" id="cubitp" onMouseOver="show('cubitp','cubitt');" onmouseout="hide('cubitp','cubitt');" style="left: 40%;
+top: 60.2%;">
+<div class="puntos-text" id="cubitt"><div class="triangle-up"></div>Cúbito</div></div>
+    
+<div class="spot" id="radiop" onMouseOver="show('radiop','radiot');" onmouseout="hide('radiop','radiot');" style="left: 31%;
+top: 57%;">
+<div class="puntos-text" id="radiot"><div class="triangle-up"></div>Radio</div></div>
+    
+<div class="spot" id="muneap" onMouseOver="show('muneap','muneat');" onmouseout="hide('muneap','muneat');" style="left: 29.2%;
+top: 64.3%;">
+<div class="puntos-text" id="muneat"><div class="triangle-up"></div>Muñeca arriba</div></div>
+    
+<div class="spot" id="munep" onMouseOver="show('munep','munet');" onmouseout="hide('munep','munet');" style="left: 26.3%;
+top: 67.6%;">
+<div class="puntos-text" id="munet"><div class="triangle-up"></div>Muñeca</div></div>
+    
+<div class="spot" id="palmp" onMouseOver="show('palmp','palmt');" onmouseout="hide('palmp','palmt');" style="left: 19%;
+top: 74.5%;">
+<div class="puntos-text" id="palmt"><div class="triangle-up"></div>Palma</div></div>
+    
+<div class="spot" id="pulgp" onMouseOver="show('pulgp','pulgt');" onmouseout="hide('pulgp','pulgt');" style="left: 10%;
+top: 76%;">
+<div class="puntos-text" id="pulgt"><div class="triangle-up"></div>Pulgar</div></div>
+    
+<div class="spot" id="indip" onMouseOver="show('indip','indit');" onmouseout="hide('indip','indit');" style="left: 6%;
+top: 84%;">
+<div class="puntos-text" id="indit"><div class="triangle-up"></div>Índice</div></div>
+        </div><!-- Cierra image wrapper -->
+      			<p class="texto" >&nbsp;</p></div>
+ 				
+	  </div>
+ 			 <!-- Cierra principal -->
+		
+			<div class="lateral" id="mastemas">
+				<p class="cabeza2"><a name="temas"></a>Gráficos de puntos de rastreo:</p>
+				<ul class="ul-lat">
+				<li>
+				  <p><a href="cabeza.htm" class="Estilo45">cabeza</a></p>
+				</li>
+				<li>
+				  <p><a href="cuello.htm">cuello</a> </p>
+				</li>
+                    <li>
+				    <p class="Estilo45">brazos</p>
+				</li>
+				<li>
+				    <p><a href="torso.htm">torso</a></p>
+				</li>
+				<li>
+				    <p><a href="espalda.htm">espalda</a></p>
+				</li>
+				<li>
+				    <p><a href="piernas.htm">piernas</a></p>
+				</li>
+				<li>
+				    <p><a href="mujer.htm">otros</a></p>
+			      </li>
+				</ul>
+<div class="cerrar-btn5" id="lateral-btn" onclick="toggle_visibility('mastemas');"></div>
+</div><!-- Cierra lateral" -->
+  </div><!-- Cierra cuerpo" -->
+			<div>
+			
+			</div><!-- Cierra pie" -->
+<div class="btn-top" id="btn-top"><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"><img src="../graficos/arrow-up.png" width="18" height="18" alt=""/></a></div>
+	<div class="top-d" id="top-d">inicio de página</div>
+	</div></body>
+    <script>
+    function show(divp,divt){        
+        document.getElementById(divp).style.opacity = "100%";
+        document.getElementById(divt).style.display = "block";
+    }
+        function hide(divp,divt){        
+        document.getElementById(divp).style.opacity = "0%";
+            document.getElementById(divt).style.display = "none";
+    }
+    </script>
+</html>

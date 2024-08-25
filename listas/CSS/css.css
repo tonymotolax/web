@@ -1,0 +1,27 @@
+.tablacomen{
+	width: 100%;
+	font-family: arial;
+	font-size: 14px;
+	
+
+}
+
+tr:nth-child(even) {
+background-color:#ffffff;
+}
+tr:nth-child(odd) {
+background-color:#f2f2f2;
+
+}
+
+td{
+
+	width: 25%;
+}
+.tablacomen1{
+	
+	font-family: arial;
+	font-size: 11px;
+	
+
+}

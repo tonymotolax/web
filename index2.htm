@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bion</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="CSS/css-menu.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/CSS02.css" rel="stylesheet" type="text/css" />
+    <link id="CSS-main" rel="stylesheet" type="text/css" href="CSS/metal.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+    <style>
+        .tabla1 {
+            display: block;
+            width: 600px;
+            margin: 0 auto;
+        }
+        
+        .tabla1 td {
+            min-width: 16.6%;
+        }
+        
+        .tabla1 td img {
+            max-width: 80px;
+        }
+        
+        .tabla1 td img:hover {
+            transform: scale(1.12);
+        }
+        
+        .tabla2 {
+            display: none;
+        }
+        
+        @media (max-width: 820px) {
+            .tabla1 {
+                display: none;
+            }
+            .tabla2 {
+                display: block;
+                width: 100vw;
+                margin: 0 auto;
+            }
+            .tabla2 td {
+                min-width: 16.6%;
+            }
+            .tabla2 td img {
+                max-width: 80px;
+            }
+            .tabla2 td img:hover {
+                transform: scale(1.12);
+            }
+        }
+    </style>
+</head>
+
+<body onLoad="start();" id="bodyin">
+    <script src="js/menu.js"></script>
+    <!--Cuerpo de página -->
+    <div class="main-page">
+        <div class="anchura" id="anchura">
+            <div class="principal" id="principal">
+                <div class="general" id="cont">
+
+
+                    <div class="cabeza1"><span style="font-size:32px; margin-left:15px;">Secciones:</span></div>
+                    <p> <br/></p>
+                    <hr/>
+                    <p style="width: 100%; max-width: 80vw" align="center">
+                        <table border="0" class="tabla1">
+                            <tr>
+                                <td>
+                                    <a href="padecimientos.htm" onMouseOver="opacity('Image01');" onMouseOut="opacity2('Image01');"><img src="iconos/m-padecimientos.png" alt="" class="foto" id="Image01"></a>
+                                </td>
+                                <td>
+                                    <a href="listas/mas-pares.htm" onMouseOver="opacity('Image02');" onMouseOut="opacity2('Image02');"><img src="iconos/m-listas.png" alt="" class="foto" id="Image02"></a>
+                                </td>
+                                <td>
+                                    <a href="rastreos/protocolos.htm" onMouseOver="opacity('Image03');" onMouseOut="opacity2('Image03');"><img src="iconos/m-protocolos.png" alt="" class="foto" id="Image03"></a>
+                                </td>
+                                <td>
+                                    <a href="tutorial/tutorial.htm" onMouseOver="opacity('Image04');" onMouseOut="opacity2('Image04');"><img src="iconos/m-tutorial.png" alt="" class="foto" id="Image04"></a>
+                                </td>
+                                <td>
+                                    <a href="lonuevo.htm" onMouseOver="opacity('Image06');" onMouseOut="opacity2('Image06');"><img src="iconos/m-lonuevo.png" alt="" class="foto" id="Image06"></a>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table border="0" class="tabla2">
+                            <tr>
+                                <td>
+                                    <a href="padecimientos.htm" onMouseOver="opacity('Image01');" onMouseOut="opacity2('Image01');"><img src="iconos/m-padecimientos.png" alt="" class="foto" id="Image01"></a>
+                                </td>
+                                <td>
+                                    <a href="listas/0-listas-cel.htm" onMouseOver="opacity('Image02');" onMouseOut="opacity2('Image02');"><img src="iconos/m-listas.png" alt="" class="foto" id="Image02"></a>
+                                </td>
+                                <td>
+                                    <a href="rastreos/0-rastreos-cel.htm" onMouseOver="opacity('Image03');" onMouseOut="opacity2('Image03');"><img src="iconos/m-protocolos.png" alt="" class="foto" id="Image03"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="tutorial/tutorial.htm" onMouseOver="opacity('Image04');" onMouseOut="opacity2('Image04');"><img src="iconos/m-tutorial.png" alt="" class="foto" id="Image04"></a>
+                                </td>
+                                <td>
+                                    <a href="lonuevo.htm" onMouseOver="opacity('Image06');" onMouseOut="opacity2('Image06');"><img src="iconos/m-lonuevo.png" alt="" class="foto" id="Image06"></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <hr/>
+
+                    <div class="lateral" id="mastemas">
+                        <ul class="ul-texto">
+                            <li><a href="gdeg.htm" target="_top">Uso de la Guía</a></li>
+                            <li><a href="Programa.htm" target="_top">Programa</a></li>
+                            <li><a href="B-ION_HIPERVINCULO_JACOBO_pp.html">Bion</a></li>
+                            <li><a href="actualidad.htm">Acerda de</a></li>
+                        </ul>
+                        <div class="cerrar-btn2 oculto" id="lateral-btn" onclick="toggle_visibility('mastemas');"><img src="graficos/menu_cab2.gif" width="27" height="29" alt="" /></div>
+                    </div>
+                </div>
+                <div class="btn-top" id="btn-top">
+                    <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"><img src="graficos/arrow-up.png" width="18" height="18" alt="" /></a>
+                </div>
+                <div class="top-d" id="top-d">inicio de página</div>
+            </div>
+            <script>
+                // Mostrar esconder menu lateral celular
+                function toggle_menu(id) {
+                    var e = document.getElementById(id);
+                    if (e.style.width == '200px') {
+                        document.getElementById("cel-bar").style.width = "0px";
+                        document.getElementById("menu-btn2").style.display = "none";
+                        document.getElementById("menu-btn").style.display = "block";
+                        document.getElementById("principal").style.marginLeft = "0px";
+                    } else {
+                        document.getElementById("cel-bar").style.width = "200px";
+                        document.getElementById("menu-btn2").style.display = "block";
+                        document.getElementById("menu-btn").style.display = "none";
+                        document.getElementById("principal").style.marginLeft = "70px";
+                    }
+                }
+
+                function opacity(id) {
+                    var image = document.getElementById(id);
+                    image.style.opacity = "0.7";
+                }
+
+                function opacity2(id) {
+                    var image = document.getElementById(id);
+                    image.style.opacity = "1";
+                }
+            </script>
+</body>
+
+</html>

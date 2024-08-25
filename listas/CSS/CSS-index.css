@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	align-content:center;
+	overflow:visible;
+}
+.index-pc {
+	display:block;
+}
+.index-cel {
+	display:none;
+}
+#header {
+  display:flex;
+left:0px;
+  background-color: #3366FF; /* Grey background */
+  padding-left: 10px; /* Some padding */
+  text-align: left; 
+  height: 150px; /* initial height */
+  text-align: center; /* Centered text */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.5s; /* Add a transition effect (when scrolling - and font size is decreased) */
+z-index:555;
+}
+.menu-bar {
+	padding-left: 15%;
+	padding-top:10px;
+	left:0px;
+	position: fixed;
+	display:inline-flex;
+    width: 100%;
+	z-index:555;
+	top:150px;
+	height: 30px;
+	background-color: #384378;	
+	transition: 0.5s;
+        }
+.menu-btn {		
+	float:right;
+	padding-top:10px;
+	padding-right:10px;
+	padding-left:10px;
+	max-height:40px;
+	text-align: center;	
+	min-width:80px;
+	width:110px;
+	max-width:150px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: 500;
+	font-size:16px;
+	margin-top: -10px;
+	margin-left: 0px;
+        }
+
+.menu-btn:hover {	
+	max-height:40px;	
+	background-color: #3499F8;
+	z-index:777;
+        }
+
+.menu-down {
+    display : none;
+	font-size:16px;
+	margin-left: -10px;
+	margin-top:10px;		
+	width:inherit;	
+	background-color: #1E88EC;
+	padding:7px;	
+        }
+
+.ul-down {	
+	list-style-type: none;
+	text-align: left;
+	margin-left: -30px;
+	margin-top:-5px;	
+        } 
+
+.ul-down ul{	
+	padding-top: 10px;	
+        } 
+.wguia { 
+	position:relative;
+	width:105%;
+	top:170px;
+	z-index: 333;		
+    margin-left: 0px;	
+	background: hsla(0,0%,75%,1.00);
+	transition: 0.8s;
+	height: 1000px;
+	overflow-x:hidden;
+	
+ }
+
+
+@media (max-width: 820px){
+	
+.index-pc {
+	display:block;
+}
+.index-cel {
+	display:none;
+}
+}
+
+@media (max-width: 620px){
+	
+.index-pc {
+	display:none;
+}
+.index-cel {
+	display:block;
+}
+}
+
+@media (max-width: 420px){
+	
+	.index-pc {
+	display:none;
+}
+	.index-cel {
+	display:block;
+}
+}
+

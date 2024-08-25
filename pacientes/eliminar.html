@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Indexeddb</title>
+    <script type="text/javascript" src="js/eliminar.js" ></script>
+    <link href="indexeddb.css" rel="stylesheet" type="text/css">
+    <script src="js/sorttable.js"></script>
+    <link rel="stylesheet" type="text/css" href="../CSS/CSS02.css"/>
+    
+    <link id="CSS-main" rel="stylesheet" type="text/css" href="../CSS/metal.css"/>
+    <script src="../js/main.js" type="text/javascript"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/jszip.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.2.621/js/kendo.all.min.js"></script>
+    <script>
+       function ExportPdf(){ 
+        kendo.drawing
+        .drawDOM("#myCanvas", 
+        { 
+            paperSize: "A4",
+            margin: { top: "1cm", bottom: "1cm" },
+            scale: 0.55,
+            height: 500,
+            width: 800
+        })
+        .then(function(group){
+            kendo.drawing.pdf.saveAs(group, "registro.pdf")
+        });
+    }
+</script>
+
+<script type="text/javascript">
+	function Export2Doc(element, filename = ''){
+        var preHtml = "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'><head><meta charset='utf-8'><title>Export HTML To Doc</title></head><body>";
+        var postHtml = "</body></html>";
+        var html = preHtml+document.getElementById(element).innerHTML+postHtml;
+        var blob = new Blob(['ufeff', html], {
+            type: 'application/msword'
+        });
+        
+    // Specify link url
+    var url = 'data:application/vnd.ms-word;charset=utf-8,' + encodeURIComponent(html);
+    
+    // Specify file name
+    filename = filename?filename+'.doc':'registro.doc';
+    
+    // Create download link element
+    var downloadLink = document.createElement("a");
+
+    document.body.appendChild(downloadLink);
+    
+    if(navigator.msSaveOrOpenBlob ){
+        navigator.msSaveOrOpenBlob(blob, filename);
+    }else{
+        // Create a link to the file
+        downloadLink.href = url;
+        
+        // Setting the file name
+        downloadLink.download = filename;
+        
+        //triggering the function
+        downloadLink.click();
+    }
+    
+    document.body.removeChild(downloadLink);
+}
+</script>
+
+</head>
+<body onload="startdb();" >
+
+	<div id="myCanvas">
+
+        <div class="anchura" id="anchura">
+
+            <div class="cuerpo">
+              
+               <br>
+               <br>
+               <div class="principal">
+                Desea Eliminar a :<br>
+                <p id="name"></p>  <br>
+                
+                <button onClick="eliminar();" class="borrar">Si</button>
+                <button onClick="regreso();" class="ver2">No</button>
+
+            </div>
+            <div class="lateral" id="mastemas">
+              <p class="tit-menu"> Borrar Registro</p>
+          </div>
+
+          <br />
+          
+      </div>
+  </div>
+  <script type="text/javascript">	
+   
+   function show_menu(id) {
+     document.getElementById(id).style.display='block';	
+ }
+ function hide_menu(id) {
+     document.getElementById(id).style.display='none';
+     document.getElementById(id).style.transitionDelay = "1000";
+ }
+</script>
+</div>
+<script type="text/javascript" src="../main.js"></script>	
+	</body>
+</html>
+
+
+
+
+
+
+
+

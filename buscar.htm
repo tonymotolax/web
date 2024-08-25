@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GMBM-Buscar</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link href="CSS/css-menu.css" rel="stylesheet" type="text/css" />
+	<link href="CSS/CSS02.css" rel="stylesheet" type="text/css" />
+	<link id="CSS-main" rel="stylesheet" type="text/css" href="CSS/metal.css"/>
+	<script type="text/javascript" src="js/main.js"></script>
+	<style> 
+        
+        .bot-mastemas {display:none}
+        
+		.anchura2 {	
+			max-width: 1350px;
+			width: 100%;
+			min-width: 900px;
+			margin-left: 15px;
+		}    
+
+		.buscar {
+			display:block;
+			position:relative;			
+			padding:15px;
+			float:left;
+			max-width: 500px;
+			width: 450px;	
+			min-width:380px;
+			z-index: 222;	
+			overflow-y: auto;
+			overflow-x: hidden;	
+			background-color: hsla(0,0%,100%,0.36);
+		}
+		
+		.recuadro2 {
+display:flex;
+ background_color:#fff;	
+padding:12px;
+	width:300px;
+margin-top: 15px;
+-webkit-box-shadow: 2px 2px 7px #777;
+  -moz-box-shadow: 2px 2px 7px #777;
+  filter: shadow(color=#999999, direction=135, strength=2);
+  margin-bottom:8px;
+  margin-left:15px;
+  margin-right:15px;
+  overflow: visible;  
+  transition-duration: 0.8s;
+}
+
+		.buscar-btn {
+			position:relative;
+			right:10px;
+			color:hsla(222,27%,31%,1.00);
+			margin-right:0px;
+			bottom:0px;			
+			margin-bottom: 0px;
+			font-family:'Roboto', sans-serif;
+			text-decoration:none;	
+			padding:7px 10px 7px 10px;
+			margin-top:32px;	
+			border-radius: 20px;
+			z-index: 225;
+			background-color: #898FA0;
+		}
+
+		.buscar-btn:hover {	
+			background-color: #12C004;
+			color:#fff;
+		}
+		
+		.buscar-resu {	
+			position:fixed;			
+			padding:10px;
+			left:0px;
+			margin-left:50%;
+			width:48%;
+			min-width:300px;
+			top: 200px;
+			min-height: 300px;
+			z-index: 222;
+			opacity: 0.8;
+			background-color: #bbb;
+		}
+
+		/* Menu tablet y celular*/
+		@media (max-width: 1000px) { 
+
+			.anchura2 {	
+				max-width:1000px;
+				display:block;
+				margin-left: 5px;				
+			}
+			.buscar {
+				position:fixed;
+				max-width:94%;
+				width:92%;
+				min-width:90%;
+				top:180px;				
+				left:0px;
+				float: none;
+				background-color: #fff;
+				height:30%;
+				max-height:30%;
+				z-index: 333;
+				padding: 20px;
+				overflow-y: auto;
+				overflow-x: hidden;				
+			}
+			.buscar-resu {	
+				position:fixed;
+				max-width: 1000px;
+				width: 96%;
+				min-width:350px;
+				left:0px;
+				margin-left:0px;
+				margin-top:200px;
+				top: 30%;				
+				height:60%;	
+				z-index: 222;				
+			}
+		}
+		/* Menu tablet y celular*/
+		@media (max-width: 800px) { 
+
+			.anchura2 {	
+			max-width: 800px;
+			width: 95%;
+			min-width: 601px;			
+		} 
+		}
+		/* Menu tablet y celular*/
+		@media (max-width: 600px) { 
+
+			.anchura2 {	
+			max-width: 600px;
+			width: 95%;
+			min-width: 401px;			
+		}   
+		}
+		/* Menu tablet y celular*/
+		@media (max-width: 400px) { 
+
+			.anchura2 {	
+			max-width: 400px;
+			width: 95%;
+			min-width: 300px;			
+		} 
+            .buscar-resu {	
+				display:none;				
+			}
+		}
+	</style>
+</head>
+
+<body onLoad="start();" id="bodyin">		
+	<script src="js/menu.js"></script>
+	<!--Cuerpo de página -->	
+	<!-- Banner slider" -->
+	<div class="main-page">
+
+		<div class="anchura2" id="anchura">
+			<!-- Buscar -->	
+			<p class="cabeza1" style="margin-top:-20px">Buscar</p>
+	
+				<div id="buscar" class="buscar">						
+					<div class="recuadro2" style="display:block">						
+						<a href="#" class="cerrar-btn" onClick="bor();" style="color:#fff">X</a>	
+						<input type="text" id="search" autocomplete="off">
+						<input type="button" class="buscar-btn" onClick="search();" Value="Buscar" style="color:#fff; float:right; margin-top:-8px;"><p><br/></p>
+					</div>	
+					<p class="cabeza2" style="max-width:280px"><strong>Resultados:</strong></p>					
+					<div id="find" class="buscar-res">
+					</div>					
+				</div>            
+				<div class="buscar-resu">
+					<iframe src="sin-resultados.htm" name="buscados" id="buscados"  scrolling="no" frameborder="0"
+					style="margin-top:-140px; position: relative; overflow:hidden; height:100%; min-height:550px; width:100%; z-index:111;"></iframe>
+				</div>
+<div class="btn-top" id="btn-top"><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"><img src="graficos/arrow-up.png" width="18" height="18" alt=""/></a></div>
+	<div class="top-d" id="top-d">inicio de página</div>
+			</div>
+		</body>
+		</html>

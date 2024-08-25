@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Estilos links*/
+
+body {
+	background-color:#fff;
+}
+
+a:link {
+color: #0B3598;
+	text-decoration: none;
+	font-weight:600;
+}
+
+a:visited {
+color: #0E40B7;
+	text-decoration: none;
+	font-weight:600;
+}
+
+a:active {
+color: #03E7C0;
+	text-decoration: none;
+	font-weight:600;
+}
+
+a:hover {
+color: #0E85BF;
+	text-decoration: none;
+	font-weight:600;
+}
+
+#header {
+background: -webkit-linear-gradient(right, #3366ff, #3366ff, #2C3072); 
+	}
+
+.cel-head {
+background: #3366ff; 
+	}
+
+.adorno {
+content: url("../../skins/cabeza-blue.jpg");
+    height:150px;
+}
+
+.tabla-headcel {
+	background-color: #111749;
+	}
+
+.mastemas:hover {
+	background-color: #4075F7;	
+	}
+
+.cabeza3 {
+	color:#0B3598;	
+}
+
+.titulo1 {
+	color:#0B3598;	
+}
+
+
+.titulo2 {	
+	background:#0B3598;	
+}
+
+.tit-tipo {	
+	background:#0B3598;	
+}
+
+.bala {	
+	background:#0B3598;	
+}
+
+.tit3 {		
+	background:#0B3598;	
+}
+
+.cabeza1 {	
+	color:#06297A;	
+}
+
+.cabeza2 {	
+	color:#06297A;
+}
+	.show-hidde:hover {
+	background-color:#4075F7;
+	}
+
+/*Menú principal*/
+
+ul.acel li a {							
+background-color: rgba(25,17,94,1.00);				
+			}
+
+ul.acel li a:hover {
+	background:#2879D9;
+}
+
+.menu-sup {
+background-image: url("../../graficos/head-blue.jpg");
+}
+
+
+.menu-lat {							
+background:#135AAF;				
+			}
+
+/*Etiq visualizacion*/
+
+
+
+.backAnim:hover{
+background:#4075F7;
+}
+
+/* Speech ballons */
+
+
+/*Gestion de medios*/
+/*Desktop
+@media (min-width: 1100px)*/
+	
+	
+
+/*Tablet Grande o PC chica  @media (min-width: 800px)and (max-width: 1099px){*/
+
+	
+	
+
+/*Tablet chica*/
+@media (min-width: 621px) and (max-width: 799px){	
+
+.cerrar:hover {
+	background-color:#4075F7;
+	}	
+    .adorno {
+content: url("../../skins/cabeza-blue.jpg");
+    height:150px;
+}
+}
+
+/*Mobile*/
+@media (max-width: 620px){
+
+	.cerrar:hover {
+	background-color:#4075F7;
+	}
+    .adorno {
+content: url("../../skins/cabeza-blue.jpg");
+    height:90px;
+}
+}
+
+
+
+

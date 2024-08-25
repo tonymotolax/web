@@ -1,0 +1,51 @@
+***NUEVAS PAGINAS 7.1****
+adeno-hipofisis.htm
+ah1n7.htm
+aftas.htm
+b_doderlein.htm
+coxiella_b.htm
+flaviviridae.htm
+lepromatosis.htm
+tuberculosis-avis.htm
+estrepto-salivarius.htm
+elefantiasis.htm
+has-hiz.htm
+cianosis.htm
+gastroenteritis.htm
+hematuria.htm
+peyronie.htm
+picornavirus.htm
+
+
+***PAGINAS CORRG 7.1****
+hipofisis_disf.htm: link: tumor benigno
+aborto.htm: nuevos pares y texto
+adenovirus.htm: pancreas-duodeno
+ah1n1.htm link:ah1n7.htm
+aftosa.htm link:aftas.htm
+alergia_a.htm cambio de tema a alergia, nuevos pares, etc.
+vaginitis: link: doderlein.htm
+lepra: link: lepromatosis.htm
+dentales: link: estrepto-salivarius.htm
+filaria: link: elefantiasis, hematoquiluria
+espiroqueta links: elefantiasis y otros...
+cardiovasculares cambio de links y párrafo arritmias
+bradicardia (minuto) link: has-hiz
+anaalicia link: has-hiz
+manopausia: par riñón=
+gastritis: línea gastroenteritis
+insomnio: occipital= temporal=
+coronaviruas: link: hematuria.htm
+renales: síntomas: hematuria
+erectil.htm link:peyronie
+catarro-comun.htm link: picornavirus
+poliomielitis: también llamado poliovirus... pares: cigomatico=, malar=
+psoriasis: varios cambios
+pterigon: nuevos pares
+parkinson: par polo= peina la cola del cabello.
+olazo: tobillo=
+
+*** NUEVAS BUSQUEDAS MAIN.JP: 10352 ****
+6909 hematuria.htm
+
+

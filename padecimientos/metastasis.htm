@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Metástasis</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<link href="../CSS/css-menu.css" rel="stylesheet" type="text/css" />
+<link href="../CSS/CSS02.css" rel="stylesheet" type="text/css" />
+<link id="CSS-main" rel="stylesheet" type="text/css" href="CSS/metal.css"/>
+<script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body onLoad="start();" id="bodyin">		
+<script src="js/menu-pades.js"></script>	
+	<div class="main-page">
+
+		<div class="anchura" id="anchura">
+
+
+
+<div class="cuerpo">
+
+<p class="titulo1" id="titulo" >Metástasis</p>
+
+<div class="principal">
+
+      <div class="tit-tipo" id="tipo" >Tipo: <span class="titulo2bold" >Enfermedad compleja</span></div>
+	 <div class="recuadro1">
+   <div class="pares posicion" id="pares-a">
+     <p class="cabeza1 cabpar">Pares</p>
+      	<p class="textpar backAnim espaciado10"  href="#" onMouseOver="MM_swapImage('pares2','','../pares/escapulas.jpg',1)">escápula* -<font class="rojo"> escápula</font></p>
+	   
+	    <input class="show-hidde" name="mostrar" type="image" value="mostrar" src="../iconos/show.png" onClick="mostrarPares();">  
+  <div id="pares" class="oculto">
+      	<p class="textpar backAnim espaciado10"  href="#" onMouseOver="MM_swapImage('pares2','','../pares/pleura-apendice.jpg',1)">pleura* - <font class="rojo">peritoneo.</font></p>
+      	<p class="textpar backAnim espaciado10"  href="#" onMouseOver="MM_swapImage('pares2','','../pares/temporoccipi.jpg',1)">temporo-occipital* - <font class="rojo">temporo-occipital</font></p>
+	   <p class="textpar backAnim espaciado10"  href="#" onMouseOver="MM_swapImage('pares2','','../pares/rectos.jpg',1)">recto -<font class="rojo"> recto</font></p>
+      	<p class="textpar backAnim espaciado10"  href="#" onMouseOver="MM_swapImage('pares2','','../pares/estomago-escapula.jpg',1)">estómago - <font class="rojo">escápula</font></p>
+      	<p class="textpar backAnim espaciado10"  href="#" onMouseOver="MM_swapImage('pares2','','../pares/ano-escapula.jpg',1)">ano - <font class="rojo">escápula</font></p>	
+	   <p class="textpar backAnim espaciado10"  href="#" onMouseOver="MM_swapImage('pares2','','../pares/clitoris.jpg',1)">pubis - <font class="rojo">pubis</font></p>
+	  <input class="show-hidde" name="ocultar" type="image" value="ocultar" src="../iconos/hidde.png" onClick="ocultarPares();">
+		</div>
+     </div>
+      
+      <div class="graficos">
+      <img src="../pares/escapulas.jpg" alt="pares" id="pares2">
+   </div>
+</div>        
+ <div class="general" id="cont">
+	 <p class="nota" >* Algunos pares presentados son <strong>Reservorios de Metástasis</strong>, se requiere testear patógenos.</p>
+      <p class="cabeza1" >Generalidades:</p>   
+  <p align="left" class="texto" >Metástasis es la diseminación de las células cancerosas a otro tejido y órgano distinto a dónde se originó. También se le puede llamar: <strong>cáncer metastásico</strong>, <strong>cáncer avanzado</strong> o <strong>cáncer en estadío 4</strong>.</p>
+<p align="left" class="texto" >El par biomagnético asocia este fenómeno con la presencia de bacterias anaerobias como son el <a href="botulismo.htm">Clorstridium botulinium</a> o el <a href="tetanos.htm">Clorstridium Tetani</a>.</p>
+
+ </div>
+
+<!--Termina sección oculta -->
+
+ </div>
+</div>
+ 
+<div class="lateral" id="mastemas">
+	<div class="recuadro3" style="margin-left: 6px; display:block; padding:3px; width: 165px;"> 
+	<p class="cabeza2" width="100%" style="font-size:18px"><sup>Leer texto:</sup> <button onClick="inicio('inicio')"  style="border-radius:15px;  margin-top:7px;border:0;"><img src="../iconos/au-pl.png" id="arr" width="26px" style="border-radius:15px;  border:0;"></button>
+		<button onClick="inicio('pause')" style="margin-left:10px;  margin-top:7px; border:0;border-radius:15px;"><img src="../iconos/au-pa.png" id="pou" style="display:none; border-radius:15px;  border:0;" width="26px"></button></p> 		
+		<p class="cabeza2" width="100%" style="font-size:18px; margin-bottom: 5px"><sup>Leer pares:</sup>  <button onClick="vida('inicio')"  style="border-radius:15px;margin-top:7px;  border:0;"><img src="../iconos/au-pl.png" id="ini" width="26px" style="border-radius:15px;  border:0;"></button>
+			<button onClick="vida('pause')" style="margin-left:10px; margin-top:7px; border:0;border-radius:15px;"><img src="../iconos/au-pa.png" id="pau" style="display:none; border-radius:15px;  border:0;" width="26px"></button></p> 		
+		</div>
+<ul class="ul-lat">
+<li><a href="cancer.htm">cáncer</a></li>
+<li><a href="botulismo.htm">botulismo</a></li>
+<li><a href="tetanos.htm">tétanos</a></li>
+</ul>
+<div class="cerrar-btn5" id="lateral-btn" onclick="toggle_visibility('mastemas');"></div>
+</div>
+</div>
+</div>
+<br />
+<div class="btn-top" id="btn-top"><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"><img src="../graficos/arrow-up.png" width="18" height="18" alt=""/></a></div>
+<div class="top-d" id="top-d">inicio de página</div>
+	</div></body>
+</html>

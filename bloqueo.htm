@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="js/main.js"></script>
+    <title>Bloqueo</title>
+    <style type="text/css">
+        body{
+            font-family: arial;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sección activación --> 
+    <div id="activar" style="display:none;">
+        <div><!-- Cabeza ventana activación -->  
+            <div style="position:fixed; top:0px; width: 100%; height:50px; background-color: #6CF856; z-index:999;"> 
+                <p class="texto" style="font-size:22px; " >Paso 2: Generar clave<input type="button" name="yes" class="botonf" value="Cerrar" onClick="cerrarActivar()" style="position:absolute; top:5px; padding: 5px; right:20px; border-radius: 5px;"> </p>    
+            </div>  
+            <iframe src="https://www.guiabiomagnetismo.com/activa/" name="activar" id="frame" width="100%" height="200px" scrolling="yes" frameborder="0"  style="position:fixed; top:50px; z-index:999;"></iframe>
+        </div>
+    </div>
+
+
+    <div class="anchura" id="anchura">      
+        <div class="cuerpo" align="center">
+
+            <div class="principal2">    
+                <!--Cuerpo de texto -->
+                <p class="cabeza1" style="margin-top:40px; text-align:center; color:#2B2B2B;">Bienvenido a la</p>
+                <div class="logo5uno"><img src="graficos/logo-txt2.png" width="300px" alt=""/></div>
+
+                <p class="cabeza1" style="margin-top:10px; margin-left:49px; text-align:center; color:#2B2B2B;">Activación</p>
+                <p class="texto" align="left">Para utilizar la Guía de Biomagnetismo 7.1 primero deberá activarla con el usuario y contraseña personal. Contar con membresía vigente y tener al menos una activación disponible.<br/>
+                El proceso de activación requiere conexión a internet.</p>
+
+                <p class="texto" align="center">Al activar la Guía solo podrá usarla en este equipo y con el navegador que está usando actualmente.</p> 
+                <p class="texto" align="center"><strong>Paso 1: Genera la clave de activación</strong></p>
+                <form>
+                    <p class="texto" align="center"><input type="button" name="yes" id="si" style="padding: 10px; border-radius:5px;background-color: #BFE1F3;" value="Generar clave" onClick="abrirActivar();"></p>
+                </form> 
+                <p class="texto" align="center">Introducir a continuación la clave generada en la ventana emergente (puede copiar y pegar).</p> 
+                <hr>
+                <p class="texto" align="center"><strong><em>Paso 3: Pega la clave de activación :</em></strong>
+                    <input type="text" name="password" id="pass" style="padding:5px;"></p>
+                    <br>
+                    <p class="texto" align="center"><input type="button" name="activar2" style="padding:10px; " id="acivar2"value="Activar" onClick="activa();" style="background-color: #05DF03"></p>      
+                    <p><br/></p>
+                    <p class="nota" align="center">También le recomendamos ver el <a href="https://youtube.com/watch?v=JgTgxA5_CU8&" target="_blank">video de activación</a>.</br>Con gusto lo ayudaremos si ha tenido algún problema en la activación, si ha cambiado de equipo o si desea adquirir una activación adicional. <a href="mailto:atencion.gmbm@gmail.com">atencion.gmbm@gmail.com</a></p>
+                </div>      
+
+            </div>  
+        </div>
+        <br>
+        <br>
+    </body>
+    </html>
