@@ -35,6 +35,9 @@
 
         .buttons {
             margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
         button {
@@ -45,11 +48,37 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
-            margin: 0 10px;
             transition: background-color 0.3s ease;
         }
 
         button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Menú de navegación */
+        nav {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            text-align: left; /* Alinea el contenido a la izquierda */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            padding-left: 20px; /* Añade un margen desde el borde izquierdo */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
             background-color: #0056b3;
         }
 
@@ -89,6 +118,11 @@
 </head>
 <body>
 
+    <!-- Menú de navegación con botón Home -->
+    <nav>
+        <a href="index.html">Home</a> <!-- Enlace para regresar al home -->
+    </nav>
+
     <h1>SINDROMES Y BIOMAGNETISMO</h1>
 
     <!-- Botones para seleccionar el PDF a visualizar -->
@@ -98,7 +132,7 @@
     </div>
 
     <!-- Aquí se incrusta el PDF en el iframe -->
-    <iframe id="pdf-iframe" src="ruta-del-archivo1.pdf">
+    <iframe id="pdf-iframe" src="libro1.pdf">
         Este navegador no soporta la visualización de PDF.
         <a href="libro1.pdf">Descargar PDF</a>
     </iframe>
