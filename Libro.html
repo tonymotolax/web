@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de PDF</title>
+    <style>
+        /* Estilos básicos y minimalistas */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        iframe {
+            width: 90%;  /* Ocupa el 90% del ancho de la pantalla */
+            height: 80vh; /* Altura relativa a la pantalla */
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            iframe {
+                width: 100%;  /* Ocupa el 100% del ancho en pantallas pequeñas */
+                height: 70vh; /* Reduce la altura en pantallas pequeñas */
+            }
+
+            button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+        /* Media query para pantallas ultra pequeñas */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 18px;
+            }
+
+            iframe {
+                height: 60vh; /* Reduce aún más la altura en móviles */
+            }
+
+            button {
+                padding: 6px 12px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SINDROMES Y BIOMAGNETISMO</h1>
+
+    <!-- Botones para seleccionar el PDF a visualizar -->
+    <div class="buttons">
+        <button onclick="loadPDF('libro1.pdf')">Parte 1</button>
+        <button onclick="loadPDF('libro2.pdf')">Parte 2</button>
+    </div>
+
+    <!-- Aquí se incrusta el PDF en el iframe -->
+    <iframe id="pdf-iframe" src="ruta-del-archivo1.pdf">
+        Este navegador no soporta la visualización de PDF.
+        <a href="libro1.pdf">Descargar PDF</a>
+    </iframe>
+
+    <script>
+        // Función para cargar un PDF específico en el iframe
+        function loadPDF(pdfPath) {
+            document.getElementById('pdf-iframe').src = pdfPath;
+        }
+    </script>
+
+</body>
+</html>
